@@ -132,8 +132,8 @@ if (left > 0){
 function moveDodgerRight() {
 window.requestAnimationFrame(function(){
   var rightNumbers = DODGER.style.right.replace('px','')
-if (left < GAME_WIDTH-20){
-  DODGER.style.right = `${Right  4}px`
+if (left < GAME_WIDTH-40){
+  DODGER.style.right = `${  4}px`
 }
 })
   /**
