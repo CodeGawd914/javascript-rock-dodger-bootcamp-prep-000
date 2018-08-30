@@ -130,13 +130,11 @@ if (left > 0){
 }
 
 function moveDodgerRight() {
-  
-  
-window.requestAnimationFrame(function(){
-  var rightNumbers = DODGER.style.right.replace('px','')
-  var left = parseInt(rightNumbers, 10)
-if (left < GAME_WIDTH-40){
-  DODGER.style.right = `${left + 4}px`
+  var left = positionToInteger(dodger.style.left);
+  if (left < GAME_WIDTH - 40){
+    dodger.style.left = `${left + 4}px`;
+    window.requestAnimationFrame(moveDodgerRight);
+  }
 }
 })
   /**
