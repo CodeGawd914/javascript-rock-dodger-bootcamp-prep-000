@@ -130,6 +130,8 @@ if (left > 0){
 }
 
 function moveDodgerRight() {
+  
+  
 window.requestAnimationFrame(function(){
   var rightNumbers = DODGER.style.right.replace('px','')
   var left = parseInt(rightNumbers, 10)
