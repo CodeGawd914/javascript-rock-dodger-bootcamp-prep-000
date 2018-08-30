@@ -134,7 +134,7 @@ window.requestAnimationFrame(function(){
   var rightNumbers = DODGER.style.right.replace('px','')
   var right = parseInt(rightNumbers, 10)
 if (right < 0){
-  DODGER.style.right = `${Right - 4}px`
+  DODGER.style.right = `${Right  4}px`
 }
 })
   /**
